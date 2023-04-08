@@ -27,9 +27,9 @@ npm install -D babel-plugin-no-console
 
 ### options
 
-| Property   | Type  | Default | Description                                                                                        |
-| ---------- | ----- | ------- | -------------------------------------------------------------------------------------------------- |
-| exclude | Array | []      | 需要保留的方法 。如传入'warn' 则会保留 console.warn()语句，不会被移除,可传值：‘warn’,'log','error' |
+| Property | Type  | Default | Description                                                                                        |
+| -------- | ----- | ------- | -------------------------------------------------------------------------------------------------- |
+| exclude  | Array | []      | 需要保留的方法 。如传入'warn' 则会保留 console.warn()语句，不会被移除,可传值：‘warn’,'log','error' |
 
 ## 使用
 
@@ -125,3 +125,11 @@ function add(m, n) {
 }
 const result = add(x, y);
 ```
+
+### 参考文档
+
+[https://www.babeljs.cn/](https://www.babeljs.cn/)
+
+[https://astexplorer.net/](https://astexplorer.net/)
+
+[https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md)
