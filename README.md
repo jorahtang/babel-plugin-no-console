@@ -19,7 +19,7 @@ npm install -D babel-plugin-no-console
 
 # 2. babelrc或 babel.config.js中添加
 {
-  plugins: ["babel-plugin-no-console"]
+  plugins: ["no-console"]
 }
 
 
@@ -43,7 +43,7 @@ npm install -D babel-plugin-no-console
 {
   plugins: [
     [
-      "babel-plugin-no-console"
+      "no-console"
     ]
   ]
 }
@@ -87,7 +87,7 @@ const result = add(x, y);
 {
   plugins: [
     [
-      "babel-plugin-no-console",
+      "no-console",
       {
         exclude:['error']
       }
