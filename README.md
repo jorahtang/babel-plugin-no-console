@@ -1,8 +1,8 @@
 <br />
-<h1 align="center">remove-console</h1>
+<h1 align="center">babel-plugin-no-console</h1>
 <p align="center">
-<a href="https://github.com/jorahtang/remove-console/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/jorahtang/remove-console"></a>
-<a href="https://github.com/jorahtang/remove-console/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/jorahtang/remove-console"></a>
+<a href="https://github.com/jorahtang/babel-plugin-no-console/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/jorahtang/babel-plugin-no-console"></a>
+<a href="https://github.com/jorahtang/babel-plugin-no-console/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/jorahtang/babel-plugin-no-console"></a>
 </p>
 
 ## 目标
@@ -15,24 +15,13 @@
 
 ```BASH
 # 1. 项目中执行
-npm install -D remove-console
+npm install -D babel-plugin-no-console
 
 # 2. babelrc或 babel.config.js中添加
 {
-  plugins: ["remove-console"]
+  plugins: ["babel-plugin-no-console"]
 }
 
-为保证在开发阶段不转换代码，记得将这个插件只配置在发布阶段：
-
-# babelrc
-{
- {
-  env: {
-    production: {
-      plugins: ["remove-console"]
-    }
-  }
-}
 
 ```
 
@@ -40,7 +29,7 @@ npm install -D remove-console
 
 | Property   | Type  | Default | Description                                                                                        |
 | ---------- | ----- | ------- | -------------------------------------------------------------------------------------------------- |
-| :['error'] | Array | []      | 需要保留的方法 。如传入'warn' 则会保留 console.warn()语句，不会被移除,可传值：‘warn’,'log','error' |
+| exclude | Array | []      | 需要保留的方法 。如传入'warn' 则会保留 console.warn()语句，不会被移除,可传值：‘warn’,'log','error' |
 
 ## 使用
 
@@ -54,7 +43,7 @@ npm install -D remove-console
 {
   plugins: [
     [
-      "remove-console"
+      "babel-plugin-no-console"
     ]
   ]
 }
@@ -98,7 +87,7 @@ const result = add(x, y);
 {
   plugins: [
     [
-      "remove-console",
+      "babel-plugin-no-console",
       {
         exclude:['error']
       }

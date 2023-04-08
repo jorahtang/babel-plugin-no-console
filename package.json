@@ -1,6 +1,6 @@
 {
-  "name": "remove-console",
-  "version": "1.0.0",
+  "name": "babel-plugin-no-console",
+  "version": "1.0.1",
   "description": "移除代码中使用了console对象的方法,例如:console.log(xxx )",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,14 @@
     "plugin",
     "console"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorahtang/babel-plugin-no-console.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jorahtang/babel-plugin-no-console/issues"
+  },
+  "homepage": "https://github.com/jorahtang/babel-plugin-no-console#readme",
   "author": "lin",
   "license": "ISC"
 }
